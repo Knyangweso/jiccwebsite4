@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1:before {
+  font-family: 'Anton', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 3.5px;
+  color: #8B9A46;
+  content: 'Jesus Impact Centre Church';
+  animation-name: head;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes head {
+  0% {
+    font-size: 320%;
+    opacity: 1;
+  }
+
+  25% {
+    font-size: 315%;
+    opacity: 0;
+  }
+
+  50% {
+    font-size: 320%;
+    opacity: 1;
+  }
+
+  65% {
+    font-size: 315%;
+    opacity: 0;
+  }
+
+  80% {
+    font-size: 320%;
+    opacity: 1;
+    content: "Jesus Impact Centre Church"
+  }
+
+  90% {
+    font-size: 315%;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 320%;
+    opacity: 1;
+    content: "Jesus Impact Centre Church"
+  }
+}
+
+#title, #core-values {
+  background-color: #541212;
+  text-align: center;
+}
+
+.top-container,#history {
+  background-color: #EEEEEE;
+  padding-bottom: 50px;
+}
+
+p {
+  color: #0F0E0E;
+  margin: 0;
+}
+
+.theme {
+  font-family: 'Dongle', sans-serif;
+  font-size: 70px;
+  padding-top: 50px;
+}
+
+.console-container {
+  font-family: 'Dongle', sans-serif;
+  font-size: 10em;
+  text-align: center;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+.cross-image {
+  height: 150px;
+  width: 140px;
+}
+
+.middle-container {
+  padding: 50px 0;
+}
+
+.sub-title {
+  font-family: 'Anton', sans-serif;
+  color: #8B9A46;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+ul, .purpose-statement {
+  list-style-type: none;
+  line-height: 1.5;
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  color: #0F0E0E;
+}
+
+.purpose {
+  padding-top: 27px;
+  margin: 0 1%;
+}
+
+.padding-top-center {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.program-row {
+  width: 50%;
+  margin: 50px auto 100px auto;
+  text-align: left;
+}
+
+.baptism-img {
+  float: left;
+  margin-right: 30px;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.baptism-text {
+  list-style-type: none;
+  line-height: 1;
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  color: #0F0E0E;
+}
+
+.baptism-title {
+    font-family: 'Anton', sans-serif;
+    color: #8B9A46;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+
+.mission-img {
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
