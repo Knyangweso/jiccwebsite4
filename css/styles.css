@@ -6,53 +6,24 @@ h1, h2, h3 {
   margin: 0;
 }
 
-h1:before {
-  font-family: 'Anton', sans-serif;
-  line-height: 1.5;
-  letter-spacing: 3.5px;
-  color: #8B9A46;
-  content: 'Jesus Impact Centre Church';
-  animation-name: head;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.waviy {
+  position: relative;
+  height: 150px;
+  line-height: 2;
 }
-
-@keyframes head {
-  0% {
-    font-size: 320%;
-    opacity: 1;
-  }
-
-  25% {
-    font-size: 315%;
-    opacity: 0;
-  }
-
-  50% {
-    font-size: 320%;
-    opacity: 1;
-  }
-
-  65% {
-    font-size: 315%;
-    opacity: 0;
-  }
-
-  80% {
-    font-size: 320%;
-    opacity: 1;
-    content: "Jesus Impact Centre Church"
-  }
-
-  90% {
-    font-size: 315%;
-    opacity: 0;
-  }
-
-  100% {
-    font-size: 320%;
-    opacity: 1;
-    content: "Jesus Impact Centre Church"
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 75px;
+  color: #EEEEEE;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
   }
 }
 
@@ -61,11 +32,21 @@ h1:before {
   text-align: center;
 }
 
-.top-container,#history {
+#projects {
+  background-color: #541212;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.top-container {
   background-color: #EEEEEE;
   padding-bottom: 50px;
 }
 
+#history {
+  background-color: #EEEEEE;
+  padding-bottom: 1px;
+}
 p {
   color: #0F0E0E;
   margin: 0;
@@ -73,8 +54,8 @@ p {
 
 .theme {
   font-family: 'Dongle', sans-serif;
-  font-size: 70px;
-  padding-top: 50px;
+  font-size: 100px;
+  padding-top: 90px;
 }
 
 .console-container {
@@ -102,7 +83,7 @@ p {
 .sub-title {
   font-family: 'Anton', sans-serif;
   color: #8B9A46;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 3px;
 }
 
@@ -110,13 +91,21 @@ ul, .purpose-statement {
   list-style-type: none;
   line-height: 1.5;
   font-family: 'Dongle', sans-serif;
-  font-size: 40px;
-  color: #0F0E0E;
+  font-size: 43px;
+  color: #EEEEEE;
 }
 
 .purpose {
   padding-top: 27px;
-  margin: 0 1%;
+  margin: 0 7%;
+}
+
+.history-statement {
+  list-style-type: none;
+  line-height: 1.5;
+  font-family: 'Dongle', sans-serif;
+  font-size: 43px;
+  color: #0F0E0E;
 }
 
 .padding-top-center {
@@ -125,8 +114,8 @@ ul, .purpose-statement {
 }
 
 .program-row {
-  width: 50%;
-  margin: 50px auto 100px auto;
+  width: 70%;
+  margin: 75px auto 80px auto;
   text-align: left;
 }
 
@@ -142,14 +131,14 @@ ul, .purpose-statement {
   list-style-type: none;
   line-height: 1;
   font-family: 'Dongle', sans-serif;
-  font-size: 30px;
+  font-size: 43px;
   color: #0F0E0E;
 }
 
 .baptism-title {
     font-family: 'Anton', sans-serif;
     color: #8B9A46;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 2.5px;
 }
 
@@ -159,4 +148,73 @@ ul, .purpose-statement {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+}
+
+.construct-img {
+  margin-top: 50px;
+  border-radius: 50%;
+  height: 150px;
+  width: 160px;
+}
+
+.project-statement {
+  line-height: 1.5;
+  font-family: 'Dongle', sans-serif;
+  font-size: 43px;
+  color: #EEEEEE;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 7%;
+}
+
+#socials {
+  background-color: #EEEEEE;
+}
+
+.socials {
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.95rem;
+  padding: 30px 0;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #541212;
+}
+
+.btn {
+  background: #0f0f0f;
+  background-image: -webkit-linear-gradient(top, #0f0f0f, #27e8b8);
+  background-image: -moz-linear-gradient(top, #0f0f0f, #27e8b8);
+  background-image: -ms-linear-gradient(top, #0f0f0f, #27e8b8);
+  background-image: -o-linear-gradient(top, #0f0f0f, #27e8b8);
+  background-image: linear-gradient(to bottom, #0f0f0f, #27e8b8);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: Arial;
+  color: #f7d036;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b8b4b4;
+  background-image: -webkit-linear-gradient(top, #b8b4b4, #0f9451);
+  background-image: -moz-linear-gradient(top, #b8b4b4, #0f9451);
+  background-image: -ms-linear-gradient(top, #b8b4b4, #0f9451);
+  background-image: -o-linear-gradient(top, #b8b4b4, #0f9451);
+  background-image: linear-gradient(to bottom, #b8b4b4, #0f9451);
+  text-decoration: none;
 }
