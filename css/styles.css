@@ -10,11 +10,12 @@ h1, h2, h3 {
   position: relative;
   height: 150px;
   line-height: 2;
+  text-align: center;
 }
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 70px;
+  font-size: 65px;
   color: #EEEEEE;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
@@ -114,7 +115,7 @@ ul, .purpose-statement {
 }
 
 .program-row {
-  width: 70%;
+  width: 75%;
   margin: 75px auto 80px auto;
   text-align: left;
 }
@@ -131,7 +132,7 @@ ul, .purpose-statement {
   list-style-type: none;
   line-height: 1;
   font-family: 'Dongle', sans-serif;
-  font-size: 43px;
+  font-size: 40px;
   color: #0F0E0E;
 }
 
